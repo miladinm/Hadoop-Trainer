@@ -86,13 +86,12 @@ public class Insurance {
           
           output.collect(key, new Text( ":  total Num=" + totsum + " key num = " + Math.round(sum) + " %=" + sum/totsum)); 
 
-    	 
         } 
       } 
     
       public static void main(String[] args) throws Exception { 
-        JobConf conf = new JobConf(WordCount.class); 
-        conf.setJobName("wordcount"); 
+        JobConf conf = new JobConf(Insurance.class); 
+        conf.setJobName("Insurance"); 
     
         conf.setOutputKeyClass(Text.class); 
         conf.setOutputValueClass(Text.class); 
